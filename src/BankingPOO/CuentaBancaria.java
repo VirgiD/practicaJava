@@ -1,4 +1,4 @@
-package Banking;
+package BankingPOO;
 
 public class CuentaBancaria {
 
