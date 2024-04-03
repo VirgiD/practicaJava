@@ -4,7 +4,7 @@ public class CuentaBancaria {
 
         private int numeroCuenta;
         private double saldo = 0;
-        double pesos ;
+        private double pesos ;
 
     public CuentaBancaria(int saldo, int numeroCuenta) {
     }
