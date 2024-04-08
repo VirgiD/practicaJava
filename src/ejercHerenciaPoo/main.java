@@ -12,5 +12,15 @@ public class main {
         System.out.println("Salario anual de " + gerente1 + ": $" + gerente1.calcularSalarioAnual());
         System.out.println("Salario anual de " + desarrollador1 + ": $" + desarrollador1.calcularSalarioAnual());
 
+        //Ampliación de ejercicio
+
+        // Crear instancias de DesarrolladorFrontend y DesarrolladorBackend
+        DesarrolladorFrontend desarrolladorFrontend1 = new DesarrolladorFrontend("Laura", 4000, "JavaScript",new String[]{"HTML", "CSS", "JavaScript"});
+        DesarrolladorBackend desarrolladorBackend1 = new DesarrolladorBackend("Carlos", 4500, "JAva",new String[]{ "SpringBoot", "MySQL"});
+
+        // Mostrar salario anual de cada desarrollador
+        System.out.println("Salario anual de " + desarrolladorFrontend1 + ": $" + desarrolladorFrontend1.calcularSalarioAnual());
+        System.out.println("Salario anual de " + desarrolladorBackend1 + ": $" + desarrolladorBackend1.calcularSalarioAnual());
+
     }
 }
