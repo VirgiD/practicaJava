@@ -68,7 +68,7 @@ public class ejercicioRegistroContactos {
 
                     switch (opcion) {
                         case 1:
-                            scanner.nextLine(); // Limpiar el buffer del teclado
+                            scanner.nextLine();
                             System.out.print("Ingrese el nombre del contacto: ");
                             String nombre = scanner.nextLine();
                             System.out.print("Ingrese el número de teléfono: ");
@@ -76,7 +76,7 @@ public class ejercicioRegistroContactos {
                             agregarContacto(nombre, telefono);
                             break;
                         case 2:
-                            scanner.nextLine(); // Limpiar el buffer del teclado
+                            scanner.nextLine();
                             System.out.print("Ingrese el nombre del contacto a buscar: ");
                             String nombreBuscar = scanner.nextLine();
                             buscarContacto(nombreBuscar);
