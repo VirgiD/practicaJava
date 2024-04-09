@@ -45,20 +45,35 @@ public class Estudiante {
         }
     }
 
-    public static void main(String[] args) {
-
-        Estudiante estudiante1 = new Estudiante(15,"Juan");
-        estudiante1.setCalificaciones(80);
-        estudiante1.setCalificaciones(100);
-        estudiante1.setCalificaciones(70);
-        estudiante1.imprimirCalificaciones();
-
-
-        double promedio = estudiante1.calcularPromedio();
-        System.out.println("El promedio de calificaciones de " + estudiante1.nombre + " es: " + promedio);
+    public String getNombre() {
+        return nombre;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
+    public int getEdad() {
+        return edad;
+    }
 
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
 
+    public ArrayList<Double> getCalificaciones() {
+        return calificaciones;
+    }
+
+    public void setCalificaciones(ArrayList<Double> calificaciones) {
+        this.calificaciones = calificaciones;
+    }
+
+    public double getCalificacion() {
+        return calificacion;
+    }
+
+    public void setCalificacion(double calificacion) {
+        this.calificacion = calificacion;
+    }
 }
