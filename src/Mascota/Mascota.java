@@ -50,18 +50,32 @@ public class Mascota {
         System.out.println("la mascota despertó");
     }
     public void caminar(){
+        if(energia > 1 && peso > 1){
         energia --;
         peso--;
         System.out.println("Energia :"+ energia + " "+ "peso :"+ peso);
+    }else{
+         System.out.println("la mascota no puede caminar, necesita obtener energia");
+        }
+
     }
     public void correr(){
+       if(energia > 2 && peso > 2){
+           energia-=2;
+           peso-=2;
+           System.out.println("energia: "+ energia + " "+ "peso: "+ peso);
+       } else{
+           System.out.println("NO tiene energia o peso suficiente");
+       }
 
     }
     public void obtenerEnergia(){
+        comer();
+        System.out.println("energia: " + energia +" "+ "peso: "+ peso);
 
     }
     public boolean estaVivo(){
-        if (energia < 0){
+        if (energia <= 0){
             return false;
         }else
            return true;

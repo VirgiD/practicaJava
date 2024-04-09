@@ -6,7 +6,7 @@ public class Main {
     private static Mascota perrito;
 
     public static void main(String[] args) {
-         perrito = new Mascota("pepe", 100, 23.4, 1, true, 1, 5);
+         perrito = new Mascota("pepe", 5, 23.4, 1, true, 1, 5);
 
         showMenu();
     }
@@ -14,7 +14,7 @@ public class Main {
             Scanner leer = new Scanner(System.in);
             int op;
             do {
-                System.out.println("eliga opcion 1-, 2-, 3-, 4-Salir");
+                System.out.println("eliga opcion 1-, 2-, 3-,4-, 5-, 6-, 7-, 8-Salir");
                 System.out.println("ingrese el valor: ");
                 op = leer.nextInt();
                 switch (op) {
@@ -28,20 +28,28 @@ public class Main {
                         perrito.despertar();
                         break;
                     case 4:
-                        System.out.println(perrito.estaVivo());
+                        perrito.caminar();
                         break;
                     case 5:
+                        perrito.correr();
+                        break;
+                    case 6:
+                        perrito.obtenerEnergia();
+                        break;
+                    case 7:
+                        System.out.println(perrito.estaVivo());
+                        break;
+                    case 8:
                         System.out.println("...");
                         break;
                     default:
                         System.out.println("Ingresa una opcion correcta");
                 }
-            } while (op != 4);
+            } while (op != 8);
+            System.out.println("juego terminado");
             {
 
             }
-
-
-        }
+    }
 
 }
