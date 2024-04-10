@@ -18,4 +18,28 @@ Diseña un sistema para una tienda que utilice conceptos de composición, interf
     - Crea una clase llamada **`CarritoCompra`** que contiene una lista de objetos **`Vendible`** y métodos para agregar productos al carrito, calcular el total y aplicar descuentos si el cliente es premium.
  */
 public class Tienda {
+    public static void main(String[] args) {
+        // Ejemplo
+        Ropa camisa = new Ropa("Camisa", 50.0, "M");
+        Electronico telefono = new Electronico("Teléfono", 500.0, "iPhone 13");
+        Comestible fruta = new Comestible("Manzana", 1.0, 7);
+
+        ClienteRegular clienteRegular = new ClienteRegular();
+        ClientePremium clientePremium = new ClientePremium();
+
+        CarritoDeCompra carrito = new CarritoDeCompra();
+        carrito.agregarProducto(camisa);
+        carrito.agregarProducto(telefono);
+        carrito.agregarProducto(fruta);
+
+        // Cliente regular realiza compra
+        System.out.println("Cliente Regular:");
+        double totalRegular = carrito.calcularTotal(clienteRegular);
+        System.out.println("Total a pagar: " + totalRegular);
+
+        //TODO: no se realiza el descuento de premium
+        System.out.println("Cliente Premium:");
+        double totalPremium = carrito.calcularTotal(clientePremium);
+        System.out.println("Total a pagar: " + totalPremium);
+    }
 }

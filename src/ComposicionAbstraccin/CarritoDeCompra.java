@@ -20,11 +20,13 @@ public class CarritoDeCompra {
         for (Vendible producto : productos) {
             total += producto.calcularPrecio();
         }
-        if (cliente instanceof ClientePremium) {
+        if (cliente.esPremium()) {
             // Aplicar descuento para cliente premium
-            total *= 0.10;
+            total *= 0.9;
         }
         return total;
     }
 }
+
+
 
