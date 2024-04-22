@@ -37,7 +37,7 @@ public class Tienda {
         double totalRegular = carrito.calcularTotal(clienteRegular);
         System.out.println("Total a pagar: " + totalRegular);
 
-        //TODO: no se realiza el descuento de premium
+        // Clinte premium
         System.out.println("Cliente Premium:");
         double totalPremium = carrito.calcularTotal(clientePremium);
         System.out.println("Total a pagar: " + totalPremium);

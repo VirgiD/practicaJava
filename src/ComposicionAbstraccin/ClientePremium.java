@@ -4,7 +4,7 @@ public class ClientePremium implements Cliente{
 
     @Override
     public boolean esPremium() {
-        return false;
+        return true;
     }
 }
 

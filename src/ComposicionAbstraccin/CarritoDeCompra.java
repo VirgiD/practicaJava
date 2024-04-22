@@ -22,9 +22,11 @@ public class CarritoDeCompra {
         }
         if (cliente.esPremium()) {
             // Aplicar descuento para cliente premium
-            total *= 0.9;
+           return total= total *= 0.9;
+        } else{
+            return total;
         }
-        return total;
+
     }
 }
 
